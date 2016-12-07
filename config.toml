@@ -8,5 +8,5 @@ tags = ["iOS", "touchBar", "iPad", "xamarin"]
   github = "xeo-it"
   linkedin = "francescopretelli"
   cover = "/images/feed.jpg"
-  logo = "/img/iPad.png"
+  logo = "img/iPad.png"
   description = "Best description ever"
