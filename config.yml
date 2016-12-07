@@ -1,11 +1,12 @@
 languageCode = "en-us"
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://timelabs.io/touchboard"
 title = "TouchBoard"
+tags = ["iOS", "touchBar", "iPad", "xamarin"]
 
 [Params]
-	twitter = "xeo_it"
-	github = "xeo-it"
-	linkedin = "francescopretelli"
-	cover = "/images/feed.jpg"
-	logo = "/img/iPad.png"
-	description = "Best description ever"
+  twitter = "xeo_it"
+  github = "xeo-it"
+  linkedin = "francescopretelli"
+  cover = "/images/feed.jpg"
+  logo = "/img/iPad.png"
+  description = "Best description ever"
