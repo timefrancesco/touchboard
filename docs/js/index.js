@@ -34,12 +34,12 @@ var $post = $('.post'),
         })
 
 
-        $('.btn.first').click( function () {
+       /* $('.btn.first').click( function () {
         	srcTo ($first)
         })
         $('.btn.last').click( function () {
         	srcTo ($last)
-        })
+        })*/
         $('#header-arrow').click(function () {
             srcTo ($first)
         })
