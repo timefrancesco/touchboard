@@ -6,7 +6,6 @@ homepage = "https://github.com/SenjinDarashiva/hugoscroll"
 tags = ["Responsive", "Awesome fonts", "single page"]
 features = ["landing page", ]
 min_version = 0.14
-twitter = "xeo_it"
 
 [author]
     name = "Fredrik Loch"
@@ -17,7 +16,3 @@ twitter = "xeo_it"
     homepage = "http://ghostscroll.grmmph.com/"
     repo = "https://github.com/grmmph/GhostScroll"
 
-[Params]
-	twitter = "xeo_it"
-	cover = "/images/feed.jpg"
-	logo = "/img/test.png"
