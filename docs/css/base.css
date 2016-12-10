@@ -1736,7 +1736,7 @@ html {
 body {
   height: 100%;
   max-height: 100%;
-  font-family: "Times New Roman", serif;
+  font-family: "Century Gothic", serif;
   font-size: 1.5rem;
   line-height: 1.6em;
   color: black; }
@@ -1811,12 +1811,15 @@ a {
 a:hover {
   color: #93ca54; }
 
-a.btn {
+a.btn { /* App Store button and other buttons */
   text-decoration: none;
-  background-color: #9FD067;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  color: white;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #0075D5;
+  border-width: 2px;
+  -webkit-border-radius: 10px;
+  color: #0075D5;
   display: inline-block;
   font-size: 20px;
   letter-spacing: 1px;
@@ -1827,10 +1830,11 @@ a.btn {
   margin-top: 3rem;
   cursor: pointer;
   font-family: 'Century Gothic', sans-serif;
-  font-weight: lighter; }
+  font-weight: lighter;
+  width: 200px; }
 
 a.btn:hover {
-  background: #93ca54; }
+  background: #f0f0f5; }
 
 #header-arrow {
   font-size: 70px;
@@ -2050,8 +2054,8 @@ ul li {
   height: 100%;
   margin-bottom: 0rem;
   text-align: center;
-  color: white;
-  background: #0099cc no-repeat center center;
+  color: #0075D5; /*text color */
+  background: #FFFFFF no-repeat center center; /*first page background color */
   background-size: cover; }
 
 #blog-logo img {
@@ -2085,7 +2089,8 @@ ul li {
 .post-holder {
   width: 100%;
   height: 100%;
-  background: #f2efe8;
+  background: #0075D5;
+  color: white;
   position: relative; }
 
 .oneOff {
@@ -2512,7 +2517,9 @@ a.fn-item.active {
     display: none; }
 
   a.btn {
-    margin-top: 10px; }
+    margin-top: 10px; 
+    width: 300px;
+  }
 
   .blog-title {
     font-size: 3rem; }

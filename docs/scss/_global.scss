@@ -376,7 +376,8 @@ ul li {
     margin-bottom: 0rem;
     text-align: center;
     color: $header-font-color;
-    background: rgb(0, 153, 204) no-repeat center center;
+    /*background: rgb(0, 153, 204) no-repeat center center;*/ /* original hugoscroll blue */
+    background: rgb(255, 255, 255) no-repeat center center; /* original hugoscroll blue */
     background-size: cover;
 }
 
