@@ -1,6 +1,6 @@
 +++
-title = "What is this"
-description = "First post"
+title = "What is TouchBoard?"
+description = "What is it?"
 weight = 1
 type = "post"
 class="post first"
