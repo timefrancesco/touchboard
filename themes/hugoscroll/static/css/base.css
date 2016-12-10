@@ -1837,8 +1837,8 @@ a.btn:hover {
   background: #f0f0f5; }
 
 #header-arrow {
-  font-size: 70px;
-  margin: 30px auto;
+  font-size: 30px;
+  margin: 80px auto;
   text-align: center;
   position: absolute;
   width: 100%;
@@ -2060,7 +2060,7 @@ ul li {
 
 #blog-logo img {
   display: block;
-  max-height: 400px;
+  max-height: 500px;
   width: auto;
   margin: 0 auto;
   line-height: 0; }
@@ -2079,7 +2079,7 @@ ul li {
   letter-spacing: -1px; }
 
 .blog-description {
-  margin: -15px;
+  margin: -10px;
   font-size: 1.2rem;
   line-height: 1.5em;
   font-weight: 300;
