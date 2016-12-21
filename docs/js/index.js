@@ -99,3 +99,10 @@ var $post = $('.post'),
                 .append('<span class="quo icon-quote-right"></span>')
     });
 }(jQuery));
+
+jQuery.fn.redraw = function() {
+    return this.hide(0, function(){jQuery(this).show()});
+};
+jQuery(document).ready(function() {
+    jQuery('body').redraw();
+});
