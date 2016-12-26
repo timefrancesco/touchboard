@@ -1736,10 +1736,11 @@ html {
 body {
   height: 100%;
   max-height: 100%;
-  font-family: "Gill Sans", sans-serif;
+  font-family: "Lucida Console", monospace;
   font-weight: lighter;
-  font-size: 20px;
-  line-height: 1.7rem;
+  font-size: 18px;
+  color: #D6EDFF;
+  line-height: 1.4rem;
   color: black; 
 
 }
@@ -1775,7 +1776,7 @@ h4, h5, h6 {
   margin-bottom: 10px;
   font-family: "Gill Sans", sans-serif;} //titles
 
-h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   line-height: 120%;
   margin-top: 0;
@@ -2096,7 +2097,9 @@ ul li {
   width: 100%;
   height: 100%;
   background: #0075D5;
-  color: white;
+
+
+  color: #D6EDFF;
   position: relative; }
 
 .oneOff {

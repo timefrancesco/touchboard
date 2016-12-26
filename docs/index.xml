@@ -9,15 +9,105 @@
     <atom:link href="https://xeo-it.github.io/touchboard/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>What is TouchBoard?</title>
+      <title> </title>
       <link>https://xeo-it.github.io/touchboard/post/first/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://xeo-it.github.io/touchboard/post/first/</guid>
-      <description>&lt;p&gt;asdasdas asdas  d
-asdasd asd a&lt;br /&gt;
-sadadasda&lt;br /&gt;
-asda&lt;/p&gt;
+      <description>
+
+&lt;h3 id=&#34;what-is-touchboard&#34;&gt;What is TouchBoard?&lt;/h3&gt;
+
+&lt;p&gt;It&amp;rsquo;s an utility for professionals to help them trigger commands, actions and shortcuts with a tap of a (virtual) button.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;how-do-i-use-it&#34;&gt;How do I use it?&lt;/h3&gt;
+
+&lt;p&gt;On your Mac, download the helper clicking on the &amp;ldquo;Download Helper&amp;rdquo; button above and run it.&lt;br /&gt;
+On your iPad, install &lt;a href=&#34;https://itunes.apple.com/app/id1187810998?mt=8&amp;amp;at=1001lpzu&#34;&gt;TouchBoard&lt;/a&gt; and follow the on screen instructions.&lt;br /&gt;
+Remeber to activate discovery mode from the Mac helper for the first connection.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;how-does-it-works&#34;&gt;How does it works?&lt;/h3&gt;
+
+&lt;p&gt;TouchBoard connects via a socket to the helper, when the helper receive commands  it executes them on the Mac.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;i-installed-the-app-and-connected-but-i-can-only-send-xcode-commands&#34;&gt;I installed the app and connected, but I can only send Xcode commands?&lt;/h3&gt;
+
+&lt;p&gt;The Xcode configuration is the default one, you can create your own configuration or modify the Xcode one. There is no limit on how many different configurations you can create and use.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;so-i-can-create-a-touchboard-configuration-for-all-the-apps-i-use&#34;&gt;So I can create a TouchBoard configuration for all the apps I use?&lt;/h3&gt;
+
+&lt;p&gt;Yes
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;what-is-a-touchboard-configuration-exactly&#34;&gt;What is a TouchBoard configuration exactly?&lt;/h3&gt;
+
+&lt;p&gt;It&amp;rsquo;s just a list of quick commands that you can send to the Mac.&lt;br /&gt;
+Each TouchBoard configuration support up to 20 commands, it is possible to customize the look (text, colors and icons) and the command to send.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;sound-cool-but-what-commands-can-i-send&#34;&gt;Sound cool but what commands can I send?&lt;/h3&gt;
+
+&lt;p&gt;It is possible to send any key configuration you want. For example, if your favourite command in your favourite app can be triggered via a combination of key like Command + Alt + Shift + F + P, you can set it up as an action in your configuration command, so you don&amp;rsquo;t have to dislocate your fingers anymore.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;so-basically-it-s-just-a-fancy-interface-for-shortcuts&#34;&gt;So basically it&amp;rsquo;s just a fancy interface for shortcuts?&lt;/h3&gt;
+
+&lt;p&gt;Yes and no, you can send any command you want not just shortcuts, you can send an entire sentence with a tap if you wish.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;ok-so-how-do-i-create-my-touchboard-configuration&#34;&gt;Ok so, how do I create my TouchBoard Configuration?&lt;/h3&gt;
+
+&lt;p&gt;Click on the new button and enter a name, once created the configuration will be empty, to add commands, click the &amp;ldquo;Edit&amp;rdquo; button to enter edit mode and tap on a square to customize it.&lt;br /&gt;
+Then tap save and tap the &amp;ldquo;Edit&amp;rdquo; button once again to exit edit mode.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;what-if-i-make-a-mistake&#34;&gt;What if I make a mistake?&lt;/h3&gt;
+
+&lt;p&gt;Just tap the &amp;ldquo;Edit&amp;rdquo; button again to enter the edit mode and fix it.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;i-want-to-change-position-of-a-command&#34;&gt;I want to change position of a command&lt;/h3&gt;
+
+&lt;p&gt;Long press the key and drag it where you want it.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;what-if-i-don-t-have-a-mac&#34;&gt;What if I don&amp;rsquo;t have a Mac?&lt;/h3&gt;
+
+&lt;p&gt;A Windows helper it&amp;rsquo;s also been developed but not yet available, if you are a developer you can check out the source code.&lt;br /&gt;
+The iPad app also needs a couple of tweaks before being able to recognize a windows machine.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;can-i-use-it-on-the-iphone&#34;&gt;Can I use it on the iPhone?&lt;/h3&gt;
+
+&lt;p&gt;Not at the moment.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;can-i-use-it-for-videogames&#34;&gt;Can I use it for videogames?&lt;/h3&gt;
+
+&lt;p&gt;Depends on the game, on the Mac it&amp;rsquo;s generally not supported, on windows you have to install a particular driver called Interceptor. At the moment it&amp;rsquo;s available in the source code repository and requires some programming knownledge to set everything up, hopefully in the future I will create an installer to simplify the process.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;i-don-t-like-the-ad-and-i-am-too-cheap-to-pay-99c-to-remove-it-why-life-is-so-hard&#34;&gt;I don&amp;rsquo;t like the ad and I am too cheap to pay 99c to remove it, why life is so hard?&lt;/h3&gt;
+
+&lt;p&gt;You can clone the git repository and install it on your iPad, that version doesn&amp;rsquo;t have any ad.&lt;/p&gt;
 </description>
     </item>
     
