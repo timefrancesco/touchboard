@@ -2439,26 +2439,11 @@ a.fn-item.active {
    9. Media Queries - Smaller than 1130px
    ========================================================================== */
 @media only screen and (max-width: 1130px) {
-  .fixed-nav {
-    opacity: 1;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 99999;
-    background: #f2efe8;
-    width: 100%;
-    text-align: center;
-    padding: 4px; }
-
-  a.fn-item {
-    display: inline;
-    margin-left: 10px; }
+  
 
   blockquote {
     margin-left: 0; }
 
-  .post-holder {
-    padding-top: 20px; }
 
   #site-head {
     -webkit-box-sizing: border-box;
