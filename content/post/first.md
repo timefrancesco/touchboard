@@ -6,7 +6,7 @@ type = "post"
 class="post first"
 +++
 
-### What is TouchBoard?
+### What is TouchBoard? 
 It's an utility for professionals to help them trigger commands, actions and shortcuts with a tap of a (virtual) button. 
 <br>
 <br>

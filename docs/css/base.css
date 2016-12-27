@@ -1,3 +1,4 @@
+@import url(//fonts.googleapis.com/css?family=Inconsolata:400,700);
 @charset "UTF-8";
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -1736,11 +1737,11 @@ html {
 body {
   height: 100%;
   max-height: 100%;
-  font-family: "Lucida Console", monospace;
+  font-family: "Inconsolata", monospace;
   font-weight: lighter;
   font-size: 18px;
   color: #D6EDFF;
-  line-height: 1.4rem;
+  line-height: 1.3rem;
   color: black; 
 
 }
@@ -1773,21 +1774,22 @@ h4, h5, h6 {
   text-rendering: optimizeLegibility;
   line-height: 1;
   margin-top: 0;
-  margin-bottom: 10px;
-  font-family: "Gill Sans", sans-serif;} //titles
+  margin-bottom: 0px;
+ } //titles
 
 h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
-  line-height: 120%;
+  line-height: 100%;
   margin-top: 0;
-  font-family: "Gill Sans", sans-serif; //smaller text
+  font-family: "Inconsolata", monospace;
   margin-bottom: 0%; }
 
 h1 {
   font-size: 2.5rem;
-  line-height: 1.2em;
+  line-height: 1.3em;
   letter-spacing: -2px;
-  text-indent: -3px; }
+  text-indent: -3px;
+  font-family: "Gill Sans", sans-serif; }
 
 h2 {
   font-size: 2rem;
@@ -1796,7 +1798,8 @@ h2 {
   text-indent: -2px; }
 
 h3 {
-  font-size: 2rem; }
+  font-size: 1.5rem;
+  color: white; }
 
 h4 {
   font-size: 1.5rem; }
@@ -1822,8 +1825,8 @@ a.btn { /* App Store button and other buttons */
   border-radius: 10px;
   border-style: solid;
   border-color: #0075D5;
-  border-width: 2px;
-  -webkit-border-radius: 10px;
+  border-width: 1px;
+  -webkit-border-radius: 7px;
   color: #0075D5;
   display: inline-block;
   font-size: 20px;
@@ -1833,11 +1836,11 @@ a.btn { /* App Store button and other buttons */
   padding: 10px 20px 10px 20px;
   position: relative;
   margin-top: 3rem;
-  line-height: 2rem;
   cursor: pointer;
   font-family: 'Gill Sans', sans-serif;
   font-weight: lighter;
-  width: 200px; }
+  width: 160px; 
+  height: 20px; }
 
 a.btn:hover {
   background: #f0f0f5; }
@@ -2066,8 +2069,11 @@ ul li {
 
 #blog-logo img {
   display: block;
-  max-height: 500px;
+  max-height: 450px;
+  min-height: 150px;
   width: auto;
+  max-width: 650px;
+  min-width: 200px;
   margin: 0 auto;
   line-height: 0; }
 
@@ -2527,7 +2533,7 @@ a.fn-item.active {
 
   a.btn {
     margin-top: 10px; 
-    width: 300px;
+    width: 200px;
   }
 
   .blog-title {
