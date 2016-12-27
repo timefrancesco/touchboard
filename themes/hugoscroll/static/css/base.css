@@ -1739,9 +1739,9 @@ body {
   max-height: 100%;
   font-family: "Inconsolata", monospace;
   font-weight: lighter;
-  font-size: 18px;
+  font-size: 1.1em;
   color: #D6EDFF;
-  line-height: 1.3rem;
+  line-height: 1.1em;
   color: black; 
 
 }
@@ -1785,20 +1785,20 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 0%; }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   line-height: 1.3em;
   letter-spacing: -2px;
   text-indent: -3px;
   font-family: "Gill Sans", sans-serif; }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2em;
   line-height: 1.2em;
   letter-spacing: -1px;
   text-indent: -2px; }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.2em;
   color: white; }
 
 h4 {
@@ -2069,11 +2069,12 @@ ul li {
 
 #blog-logo img {
   display: block;
-  max-height: 450px;
-  min-height: 150px;
-  width: auto;
+  /*max-height: 450px;
+  min-height: 100px;
   max-width: 650px;
-  min-width: 200px;
+  min-width: 240px;*/
+  max-width: 95%;
+  height: auto;
   margin: 0 auto;
   line-height: 0; }
 
@@ -2086,8 +2087,8 @@ ul li {
   font-size: 16px; }
 
 .blog-title {
-  margin: -15px 0 10px 0;
-  font-size: 4.0rem;
+  margin: -10px 0 10px 0;
+  font-size: 3.4em;  
   letter-spacing: -1px; }
 
 .blog-description {
@@ -2355,10 +2356,10 @@ a.fn-item.active {
   line-height: 1.5em;
   color: #BBC7CC;
   text-align: center;
-  background: #22343A; }
+  background: white; }
 
 .site-footer a {
-  color: #BBC7CC;
+  color: #0075D5;
   text-decoration: underline; }
 
 .site-footer a:hover {
@@ -2521,7 +2522,7 @@ a.fn-item.active {
     width: auto;
     margin-left: 16px;
     margin-right: 16px;
-    font-size: 0.8em;
+    font-size: 1em; //IOS SAFARI
     line-height: 1.6em; }
 
   #site-head {
@@ -2537,10 +2538,12 @@ a.fn-item.active {
   }
 
   .blog-title {
-    font-size: 3rem; }
+    font-size: 2.5rem;
+    margin-top: 20px;  }
 
   .blog-description {
-    font-size: 1.5rem; }
+    font-size: 1.3rem;
+    margin-bottom: 20px;  }
 
   h1, h2 {
     font-size: 3rem;
@@ -2548,7 +2551,7 @@ a.fn-item.active {
     letter-spacing: -1px; }
 
   h3 {
-    font-size: 2.8rem; }
+    font-size: 1.5rem; } //IOS SAFARI
 
   h4 {
     font-size: 2.3rem; }
