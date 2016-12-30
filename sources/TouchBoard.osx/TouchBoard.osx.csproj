@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{42C0BBD9-55CE-4FC1-8D90-A7348ABAFB23};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{6F71E741-3D68-4B57-8685-2A4BA45C08E7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ninjaKeyserverosx</RootNamespace>
+    <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
+    <AssemblyName>ninjaKey-server-osx</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <UseRefCounting>false</UseRefCounting>
+    <UseSGen>false</UseSGen>
+    <IncludeMonoRuntime>false</IncludeMonoRuntime>
+    <EnablePackageSigning>false</EnablePackageSigning>
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <CreatePackage>false</CreatePackage>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LinkMode>None</LinkMode>
+    <CodeSigningKey>Mac Developer</CodeSigningKey>
+    <PackageSigningKey>3rd Party Mac Developer Installer</PackageSigningKey>
+    <HttpClientHandler>HttpClientHandler</HttpClientHandler>
+    <TlsProvider>Default</TlsProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <LinkMode>SdkOnly</LinkMode>
+    <UseRefCounting>false</UseRefCounting>
+    <UseSGen>false</UseSGen>
+    <IncludeMonoRuntime>true</IncludeMonoRuntime>
+    <CreatePackage>true</CreatePackage>
+    <CodeSigningKey>Developer ID Application</CodeSigningKey>
+    <EnableCodeSigning>true</EnableCodeSigning>
+    <EnablePackageSigning>true</EnablePackageSigning>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PackageSigningKey>Developer ID Installer</PackageSigningKey>
+    <HttpClientHandler>HttpClientHandler</HttpClientHandler>
+    <TlsProvider>Default</TlsProvider>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="XamMac" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Assets.xcassets\uu.imageset\" />
+    <Folder Include="Assets.xcassets\test.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="MainWindowController.cs" />
+    <Compile Include="MainWindow.designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="AppDelegate.designer.cs">
+      <DependentUpon>AppDelegate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyHandler.cs" />
+    <Compile Include="AuthClientsList.cs" />
+    <Compile Include="KeysEnumOSX.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="MainWindow.xib" />
+    <InterfaceDefinition Include="MainMenu.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.icns" />
+    <BundleResource Include="Resources\tbar_BarIcon%402x.png" />
+    <BundleResource Include="Resources\tbar_BarIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TouchBoard.server.comms\TouchBoard.server.comms.csproj">
+      <Project>{CEAD6AB1-7479-476F-AAAC-582917635B32}</Project>
+      <Name>TouchBoard.server.comms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

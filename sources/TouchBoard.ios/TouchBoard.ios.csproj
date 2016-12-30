@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{B59116C8-FE81-445F-A44B-25A7F53261EC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>KeyboardCompanion</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>KeyboardCompanion</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchProfiling>true</MtouchProfiling>
+    <CodesignKey>iPhone Developer: Francesco Pretelli (J89CYEGYT4)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <IpaPackageName>
+    </IpaPackageName>
+    <CodesignProvision>921a029b-0c93-40cd-9021-4f77b75d84bb</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
+    <CodesignKey>iPhone Distribution: Francesco Pretelli (J73C7W7YKH)</CodesignKey>
+    <CodesignProvision></CodesignProvision>
+    <BuildIpa>true</BuildIpa>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'No-server|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;DISCONNECTED;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchLink>None</MtouchLink>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'No-Server-Sim|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;DISCONNECTED</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchProfiling>true</MtouchProfiling>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="SQLite">
+      <HintPath>libs\SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="AdvancedColorPicker">
+      <HintPath>libs\AdvancedColorPicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Dropins.Chooser.iOS">
+      <HintPath>libs\Dropins.Chooser.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>libs\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ZipArchive">
+      <HintPath>libs\ZipArchive.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoTouch.Dialog-1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-76%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\NinjaKey-Logo152-5.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\NinjaKey-Logo152-7.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Settings.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Settings.imageset\Settings~universal%401x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Settings.imageset\Settings~universal%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Settings.imageset\Settings~universal%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Select.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Export.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Import.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Add.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Edit.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Edit.imageset\Main-Edit~universal%401x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Edit.imageset\Main-Edit~universal%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Edit.imageset\Main-Edit~universal%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Add.imageset\Main-Add~universal%401x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Add.imageset\Main-Add~universal%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Add.imageset\Main-Add~universal%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Import.imageset\Main-Import~universal%401x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Import.imageset\Main-Import~universal%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Import.imageset\Main-Import~universal%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Export.imageset\Main-Export~universal%401x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Export.imageset\Main-Export~universal%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Export.imageset\Main-Export~universal%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Select.imageset\Main-Select~universal%401x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Select.imageset\Main-Select~universal%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Main-Select.imageset\Main-Select~universal%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-76.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\launch.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Launch-Ipad.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Refresh.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Refresh.imageset\Refresh~universal%401x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Refresh.imageset\Refresh~universal%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Refresh.imageset\Refresh~universal%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="ViewControllers\xibs\KeyCell_iPad.xib" />
+    <InterfaceDefinition Include="ViewControllers\xibs\KeyCell_iPhone.xib" />
+    <InterfaceDefinition Include="ViewControllers\xibs\EditKeyVC_iPad.xib" />
+    <InterfaceDefinition Include="ViewControllers\xibs\EditKeyVC_iPhone.xib" />
+    <InterfaceDefinition Include="ViewControllers\xibs\ServerListTableCell_iPad.xib" />
+    <InterfaceDefinition Include="ViewControllers\xibs\ServerListTableCell_iPhone.xib" />
+    <InterfaceDefinition Include="ViewControllers\xibs\RemoteConfigsListVC~ipad.xib" />
+    <InterfaceDefinition Include="ViewControllers\xibs\RemoteConfigsListVC~iphone.xib" />
+    <InterfaceDefinition Include="MainStoryBoard.storyboard" />
+    <InterfaceDefinition Include="Resources\ViewControllers\xibs\ServerLookUp_iPad.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Comms\CommsEngine.cs" />
+    <Compile Include="ViewControllers\KeyboardVC.cs" />
+    <Compile Include="ViewControllers\KeyboardVC.designer.cs">
+      <DependentUpon>KeyboardVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\KeyCell.cs" />
+    <Compile Include="ViewControllers\KeyCell.designer.cs">
+      <DependentUpon>KeyCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Entities.cs" />
+    <Compile Include="ViewControllers\EditKeyVC.cs" />
+    <Compile Include="ViewControllers\EditKeyVC.designer.cs">
+      <DependentUpon>EditKeyVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\DBManager.cs" />
+    <Compile Include="Utils\ConfigsEngine.cs" />
+    <Compile Include="Utils\Util.cs" />
+    <Compile Include="Utils\FPLog.cs" />
+    <Compile Include="ViewControllers\ServerLookUp.cs" />
+    <Compile Include="ViewControllers\ServerLookUp.designer.cs">
+      <DependentUpon>ServerLookUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ServerListTableCell.cs" />
+    <Compile Include="ViewControllers\ServerListTableCell.designer.cs">
+      <DependentUpon>ServerListTableCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\SettingsVC.cs" />
+    <Compile Include="Utils\Images.cs" />
+    <Compile Include="ViewControllers\RemoteConfigsListVC.cs" />
+    <Compile Include="ViewControllers\RemoteConfigsListVC.designer.cs">
+      <DependentUpon>RemoteConfigsListVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\KeysEnumWindows.cs" />
+    <Compile Include="Utils\KeysEnumOSX.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Comms\" />
+    <Folder Include="ViewControllers\" />
+    <Folder Include="ViewControllers\xibs\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Resources\ipad\" />
+    <Folder Include="Resources\iphone\" />
+    <Folder Include="Resources\en.lproj\" />
+    <Folder Include="Resources\Images.xcassets\Main-Settings.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Main-Select.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Main-Export.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Main-Import.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Main-Add.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Main-Edit.imageset\" />
+    <Folder Include="Resources\Configurations\" />
+    <Folder Include="Resources\Images.xcassets\Refresh.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\en.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\Configurations\Xcode.zip" />
+  </ItemGroup>
+</Project>

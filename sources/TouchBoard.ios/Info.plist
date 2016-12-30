@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>MinimumOSVersion</key>
+	<string>10.0</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>2</integer>
+	</array>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>XSAppIconAssets</key>
+	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>DropboxDropIns</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>db-btsx1g2oxrsge2d</string>
+			</array>
+		</dict>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>dbapi-1</string>
+		<string>dbapi-3</string>
+	</array>
+	<key>XSLaunchImageAssets</key>
+	<string>Resources/Images.xcassets/LaunchImage.launchimage</string>
+	<key>UIMainStoryboardFile</key>
+	<string>MainStoryBoard</string>
+	<key>UIMainStoryboardFile~ipad</key>
+	<string>MainStoryBoard</string>
+	<key>CFBundleName</key>
+	<string>TouchBoard</string>
+	<key>CFBundleIdentifier</key>
+	<string>io.timelabs.touchboard</string>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>To customize keys</string>
+	<key>CFBundleVersion</key>
+	<string>3</string>
+</dict>
+</plist>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController">
+            <connections>
+                <outlet property="ConnectedClientsLabel" destination="7em-Yg-ZfR" id="tXc-bU-nNI"/>
+                <outlet property="DiscoveryModeBtn" destination="0Rx-Fy-RVW" id="LYm-nu-j1Q"/>
+                <outlet property="ServerStatusLabel" destination="ESi-5S-IDy" id="R3T-EC-CjF"/>
+                <outlet property="quit" destination="YLI-8q-MCm" id="0To-MD-c95"/>
+                <outlet property="window" destination="2" id="6"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="TouchBoard" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" animationBehavior="default" id="2" customClass="MainWindow">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="131" y="74" width="337" height="141"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <value key="minSize" type="size" width="431" height="128"/>
+            <value key="maxSize" type="size" width="431" height="128"/>
+            <view key="contentView" misplaced="YES" id="3">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="141"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="GLu-d8-kxu">
+                        <rect key="frame" x="18" y="36" width="47" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Status:" id="ffC-tm-pHR">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="ESi-5S-IDy">
+                        <rect key="frame" x="76" y="37" width="243" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Server Started" id="xiM-P5-QqV">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="kdx-at-wEk">
+                        <rect key="frame" x="18" y="12" width="120" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Connected Clients:" id="pS7-WI-btN">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="7em-Yg-ZfR">
+                        <rect key="frame" x="177" y="12" width="142" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="20" id="KCg-3M-F4G">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" misplaced="YES" id="0Rx-Fy-RVW">
+                        <rect key="frame" x="78" y="61" width="180" height="61"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="smallSquare" title="Enable Discovery" bezelStyle="smallSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8Mw-Ac-xiB">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="StartDiscovery:" target="-2" id="M6o-jc-w1s"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" misplaced="YES" id="YLI-8q-MCm">
+                        <rect key="frame" x="3" y="103" width="66" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="c0v-Ab-TXP">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="onQuitBtnClick:" target="-2" id="rhM-WW-tMC"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="205.5" y="333.5"/>
+        </window>
+        <button verticalHuggingPriority="750" id="PO2-J4-gIY">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <buttonCell key="cell" type="smallSquare" title="Authorized Clients" bezelStyle="smallSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NdM-BX-LhK">
+                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                <font key="font" metaFont="system"/>
+            </buttonCell>
+            <point key="canvasLocation" x="166" y="65"/>
+        </button>
+    </objects>
+</document>

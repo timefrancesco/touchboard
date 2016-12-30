@@ -1,0 +1,35 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjaKey-ios-client", "NinjaKey-ios-client.csproj", "{B59116C8-FE81-445F-A44B-25A7F53261EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+		No-server|iPhone = No-server|iPhone
+		No-Server-Sim|iPhoneSimulator = No-Server-Sim|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B59116C8-FE81-445F-A44B-25A7F53261EC}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{B59116C8-FE81-445F-A44B-25A7F53261EC}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{B59116C8-FE81-445F-A44B-25A7F53261EC}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{B59116C8-FE81-445F-A44B-25A7F53261EC}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{B59116C8-FE81-445F-A44B-25A7F53261EC}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{B59116C8-FE81-445F-A44B-25A7F53261EC}.Debug|iPhone.Build.0 = Debug|iPhone
+		{B59116C8-FE81-445F-A44B-25A7F53261EC}.Release|iPhone.ActiveCfg = Release|iPhone
+		{B59116C8-FE81-445F-A44B-25A7F53261EC}.Release|iPhone.Build.0 = Release|iPhone
+		{B59116C8-FE81-445F-A44B-25A7F53261EC}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{B59116C8-FE81-445F-A44B-25A7F53261EC}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{B59116C8-FE81-445F-A44B-25A7F53261EC}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{B59116C8-FE81-445F-A44B-25A7F53261EC}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{B59116C8-FE81-445F-A44B-25A7F53261EC}.No-server|iPhone.ActiveCfg = No-server|iPhone
+		{B59116C8-FE81-445F-A44B-25A7F53261EC}.No-server|iPhone.Build.0 = No-server|iPhone
+		{B59116C8-FE81-445F-A44B-25A7F53261EC}.No-Server-Sim|iPhoneSimulator.ActiveCfg = No-Server-Sim|iPhoneSimulator
+		{B59116C8-FE81-445F-A44B-25A7F53261EC}.No-Server-Sim|iPhoneSimulator.Build.0 = No-Server-Sim|iPhoneSimulator
+	EndGlobalSection
+EndGlobal

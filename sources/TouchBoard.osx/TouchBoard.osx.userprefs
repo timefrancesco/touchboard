@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="ninjaKey-server-osx.csproj" MonoDevelop.MonoMac.LastXamMacNagTime="16/09/2015 8:26:00 a.m.">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MainWindowController.cs">
+    <Files>
+      <File FileName="KeyHandler.cs" Line="1" Column="1" />
+      <File FileName="Connectivity/ConnectivityServer.cs" Line="1" Column="1" />
+      <File FileName="MainWindowController.cs" Line="54" Column="4" />
+      <File FileName="Info.plist" />
+      <File FileName="AuthClientsList.cs" Line="1" Column="1" />
+      <File FileName="KeysEnumOSX.cs" Line="1" Column="1" />
+      <File FileName="MainWindow.cs" Line="1" Column="1" />
+      <File FileName="AppDelegate.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

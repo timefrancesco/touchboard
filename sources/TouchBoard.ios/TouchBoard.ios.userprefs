@@ -1,0 +1,9 @@
+﻿<Properties StartupConfiguration="{B59116C8-FE81-445F-A44B-25A7F53261EC}|Default">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.NinjaKey-ios-client PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.61f89cb5a72d47e26ea4302e14b928fd5484b97a" />
+</Properties>
