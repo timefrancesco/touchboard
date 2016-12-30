@@ -12,14 +12,14 @@ It's an utility for professionals to help them trigger commands, actions and sho
 <br>
 
 ### How do I use it?  
-On your Mac, download the helper clicking on the "Download Helper" button above and run it.  
+On your Mac or Windows computer, download the helper clicking on the "Download Helper" button above and run it.  
 On your iPad, install [TouchBoard](https://itunes.apple.com/app/id1187810998?mt=8&at=1001lpzu) and follow the on screen instructions.  
-Remeber to activate discovery mode from the Mac helper for the first connection.
+Remeber to activate discovery mode in the helper for the first connection.
 <br>
 <br>
 
 ### How does it works?  
-TouchBoard connects via a socket to the helper, when the helper receive commands  it executes them on the Mac.
+TouchBoard connects via a socket to the helper, when the helper receive commands  it executes them on your Mac or Windows PC.
 <br>
 <br>
 
@@ -34,7 +34,7 @@ Yes
 <br>
 
 ### What is a TouchBoard configuration exactly?  
-It's just a list of quick commands that you can send to the Mac.  
+It's just a list of quick commands that you can send to your host machine.  
 Each TouchBoard configuration support up to 20 commands, it is possible to customize the look (text, colors and icons) and the command to send.
 <br>
 <br>
@@ -65,11 +65,6 @@ Long press the key and drag it where you want it.
 <br>
 <br>
 
-### What if I don't have a Mac? 
-A Windows helper it's also been developed but not yet available, if you are a developer you can check out the source code.  
-The iPad app also needs a couple of tweaks before being able to recognize a windows machine.
-<br>
-<br>
 
 ### Can I use it on the iPhone?
 Not at the moment.
@@ -77,9 +72,13 @@ Not at the moment.
 <br>
 
 ### Can I use it for videogames? 
-Depends on the game, on the Mac it's generally not supported, on windows you have to install a particular driver called Interceptor. At the moment it's available in the source code repository and requires some programming knownledge to set everything up, hopefully in the future I will create an installer to simplify the process.
+Yes, but depends on the game, on the Mac it's not supported, on windows you have to install a particular driver called Interception.  
+Please head over the [GitHub](https://github.com/xeo-it/touchboard) repository to read the instructions if you want to do this.
 <br>
 <br>
+
+### What does "Use interceptor" checkbox do?  
+It's used for videogames on windows, please read the above answer.
 
 ### I don't like the ad and I am too cheap to pay 99c to remove it, why life is so hard?
 You can clone the git repository and install it on your iPad, that version doesn't have any ad.
