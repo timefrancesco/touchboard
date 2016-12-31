@@ -1,4 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(//fonts.googleapis.com/css?family=Josefin+Sans:300);
 @charset "UTF-8";
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -1789,7 +1790,7 @@ h1 {
   line-height: 1.3em;
   letter-spacing: -2px;
   text-indent: -3px;
-  font-family: "Gill Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif; }
 
 h2 {
   font-size: 2em;
@@ -1837,7 +1838,7 @@ a.btn { /* App Store button and other buttons */
   position: relative;
   margin-top: 3rem;
   cursor: pointer;
-  font-family: 'Gill Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
   width: 160px; 
   height: 20px; }
@@ -1854,7 +1855,7 @@ a.btn:hover {
   left: 0;
   bottom: -120px;
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.9;
   transition: all ease 0.3s;
   -webkit-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s; }
@@ -2088,7 +2089,7 @@ ul li {
 
 .blog-title {
   margin: -10px 0 10px 0;
-  font-size: 3.4em;  
+  font-size: 3.5em;  
   letter-spacing: -1px; }
 
 .blog-description {
@@ -2096,7 +2097,7 @@ ul li {
   font-size: 1.4rem;
   line-height: 0.5rem;
   font-weight: 300;
-  font-family: "Gill Sans", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: lighter;
   letter-spacing: 0; }
 
@@ -2459,7 +2460,7 @@ a.fn-item.active {
     letter-spacing: -1px; }
 
   .blog-description {
-    font-size: 1.7rem;
+    font-size: 2rem;
     line-height: 1.5em; }
 
   .post {
