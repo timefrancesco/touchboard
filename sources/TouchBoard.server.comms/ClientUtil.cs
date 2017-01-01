@@ -8,7 +8,7 @@ namespace TouchBoardServerComms
 {
 	public static class ClientUtil
 	{
-		static string _dataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\NinjaKey\\";
+		static string _dataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\TouchBoard\\";
 		static string _clientsFile = _dataFolder + "clients.ninjalist";
 		static string _clientsFileTemp = _dataFolder + "clients.ninjalist.temp";
 
@@ -72,10 +72,10 @@ namespace TouchBoardServerComms
 		{
 			List<AuthClient> clients = null;
 			if (File.Exists(input))
-			{
-				try
+            {
+                FileStream fs = new FileStream(input, FileMode.Open);
+                try
 				{
-					FileStream fs = new FileStream(input, FileMode.Open);
 					BinaryFormatter bf = new BinaryFormatter();
 					clients = (List<AuthClient>)bf.Deserialize(fs);
 					fs.Close();
@@ -83,7 +83,8 @@ namespace TouchBoardServerComms
 				catch (Exception ex)
 				{
 					Console.WriteLine("[IO] Error reading clients file: " + ex.Message);
-				}
+                    fs.Close();
+                }
 			}
 
 			return clients;

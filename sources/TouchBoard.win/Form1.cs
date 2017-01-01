@@ -20,7 +20,7 @@ namespace TouchBoardWinServer
 {
     public partial class Form1 : Form
     {
-       
+
         ConnectivityServer _newServer;
         System.Windows.Forms.Timer _secondsTimer;
         int _discoverySeconds = 60;
@@ -39,7 +39,7 @@ namespace TouchBoardWinServer
             statusLbl.Text = "Server Started";
             _numClientsConn.Text = "0";
             _secondsTimer = new System.Windows.Forms.Timer();
-              _inputemulated = new InputSimulator();
+            _inputemulated = new InputSimulator();
 
             _input = new Input();
 
@@ -55,7 +55,7 @@ namespace TouchBoardWinServer
         void _newServer_ClientDisconnected()
         {
 
-        Console.WriteLine("[FORM] Client Disconnected");
+            Console.WriteLine("[FORM] Client Disconnected");
             this.Invoke((MethodInvoker)delegate
             {
                 _numClientsConn.Text = _newServer.ConnectedClients().ToString();
@@ -107,19 +107,19 @@ namespace TouchBoardWinServer
         {
             Console.WriteLine("[FORM] Discovery Mode Enabled");
 
-              DebugBtn1.Enabled = false;
-              statusLbl.Text = "Discovery mode ON for 60 seconds";
-              _newServer.OnDiscoveryTimeOut  += _newServer_OnDiscoveryTimeOut;
+            DebugBtn1.Enabled = false;
+            statusLbl.Text = "Discovery mode ON for 60 seconds";
+            _newServer.OnDiscoveryTimeOut += _newServer_OnDiscoveryTimeOut;
 
-              _secondsTimer.Interval = 1000;
-              _discoverySeconds = 60;
-              _secondsTimer.Tick += SecondsTimer_Tick;
-              _secondsTimer.Start();
+            _secondsTimer.Interval = 1000;
+            _discoverySeconds = 60;
+            _secondsTimer.Tick += SecondsTimer_Tick;
+            _secondsTimer.Start();
 
-              new Task(() =>
-              {
-                  _newServer.ReceiveBroadcast();
-              }).Start();   
+            new Task(() =>
+            {
+                _newServer.ReceiveBroadcast();
+            }).Start();
         }
 
         //Shows the seconds going down when in discovery mode
@@ -137,6 +137,7 @@ namespace TouchBoardWinServer
         {
             Console.WriteLine("[FORM] Discovery Timeout");
 
+            _secondsTimer.Tick -= SecondsTimer_Tick;
             _secondsTimer.Stop();
 
             _newServer.OnDiscoveryTimeOut -= _newServer_OnDiscoveryTimeOut;
@@ -145,7 +146,7 @@ namespace TouchBoardWinServer
             {
                 statusLbl.Text = "Server Started";
                 DebugBtn1.Enabled = true;
-            });    
+            });
         }
 
         void StartServer()
@@ -153,14 +154,14 @@ namespace TouchBoardWinServer
             System.Diagnostics.Process.GetCurrentProcess().PriorityClass = System.Diagnostics.ProcessPriorityClass.High;
             Console.WriteLine("[FORM] Starting Server");
             _newServer.OnMessageReceived += HandleOnMessageReceived;
-            _newServer.StartServer();        
+            _newServer.StartServer();
         }
 
         void HandleOnMessageReceived(string message)
         {
-            Console.WriteLine( "[FORM] Message Received = " + message);
+            Console.WriteLine("[FORM] Message Received = " + message);
 
-             var commands = JsonConvert.DeserializeObject<List<int>>(message);
+            var commands = JsonConvert.DeserializeObject<List<int>>(message);
             if (commands != null)
             {
                 if (_useInterceptor)
@@ -194,7 +195,8 @@ namespace TouchBoardWinServer
                 {
                     keydownList.Add(newCmd);
                     _inputemulated.Keyboard.KeyDown(newCmd);
-                } else
+                }
+                else
                 {
                     _inputemulated.Keyboard.KeyPress(newCmd);
                 }
@@ -210,19 +212,20 @@ namespace TouchBoardWinServer
         {
 
             List<int> newKeys = new List<int>();
-            foreach (var singlecom in commands) {
+            foreach (var singlecom in commands)
+            {
                 VirtualKeyCode newCmd = (VirtualKeyCode)singlecom;
                 var x = Constants.InterceptorWrapper[newCmd];
                 newKeys.Add(x);
             }
 
 
-            List <Interceptor.Keys> keysDown = new List<Interceptor.Keys>(); //used if there is a ctrl, alt or shift
+            List<Interceptor.Keys> keysDown = new List<Interceptor.Keys>(); //used if there is a ctrl, alt or shift
             foreach (var cmd in newKeys)
             {
-                Interceptor.Keys newCmd = (Interceptor.Keys) cmd;
+                Interceptor.Keys newCmd = (Interceptor.Keys)cmd;
                 //these are ctrl, alt and shift (left and right)
-                if (newCmd == Interceptor.Keys.Control || newCmd == Interceptor.Keys.RightAlt || newCmd == Interceptor.Keys.RightAlt || newCmd == Interceptor.Keys.LeftShift || newCmd == Interceptor.Keys.RightShift) 
+                if (newCmd == Interceptor.Keys.Control || newCmd == Interceptor.Keys.RightAlt || newCmd == Interceptor.Keys.RightAlt || newCmd == Interceptor.Keys.LeftShift || newCmd == Interceptor.Keys.RightShift)
                 {
                     Console.WriteLine("[FORM] keydown = " + newCmd.ToString());
                     _input.ClickDelay = 20;
@@ -236,7 +239,7 @@ namespace TouchBoardWinServer
                     _input.ClickDelay = 20;
                     _input.SendKeys(newCmd);
                 }
-                               
+
             }
 
             if (keysDown.Count > 0)

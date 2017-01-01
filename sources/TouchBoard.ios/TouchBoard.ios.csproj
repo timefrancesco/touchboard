@@ -270,5 +270,6 @@
   <ItemGroup>
     <BundleResource Include="Resources\en.lproj\Localizable.strings" />
     <BundleResource Include="Resources\Configurations\Xcode.zip" />
+    <BundleResource Include="Resources\Configurations\VisualStudio.zip" />
   </ItemGroup>
 </Project>

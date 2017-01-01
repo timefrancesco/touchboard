@@ -152,15 +152,12 @@ namespace KeyboardCompanion
 
 		private void PresentServerSelection(bool hideCancelButton = true)
 		{
-			if (_serverVC == null) {
+            var storyBoard = UIStoryboard.FromName ("MainStoryBoard", null);
+            _serverVC = storyBoard.InstantiateViewController ("ServerLookUp") as ServerLookUp;
+            _serverVC.ModalPresentationStyle = UIModalPresentationStyle.FormSheet;
+            _serverVC.OnServerSelected += HandleOnServerSelected;
+			_serverVC.hideCancelButton(hideCancelButton);
 
-                var storyBoard = UIStoryboard.FromName ("MainStoryBoard", null);
-                _serverVC = storyBoard.InstantiateViewController ("ServerLookUp") as ServerLookUp;
-                _serverVC.ModalPresentationStyle = UIModalPresentationStyle.FormSheet;
-                _serverVC.OnServerSelected += HandleOnServerSelected;
-				_serverVC.hideCancelButton(hideCancelButton);
-
-			}
 			this.PresentViewController (_serverVC, true, null);
 		}
 
@@ -525,8 +522,8 @@ namespace KeyboardCompanion
 
 			InvokeOnMainThread (() => {
 				_serverVC.DismissViewController (true, null);
+				_serverVC.OnServerSelected -= HandleOnServerSelected;
 			});
-			_serverVC.OnServerSelected -= HandleOnServerSelected;
 
 			HideConnectingView ();
 		}

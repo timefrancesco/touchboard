@@ -148,74 +148,9 @@ namespace KeyboardCompanion
 				return config;
 			}
 			else {
-				var def = CreateNewConfiguration("Default", null);
-				def.OSx = osx;
-
-				string action = osx ? VirtualKeyCodeOSX.KEY_A.ToString("D") : VirtualKeyCodeWIN.KEY_A.ToString("D");
-				action = "[" + action + "]";
-
-				FPKey keyA = new FPKey
-				{
-					Action = action,
-					MainTitle = "A",
-					SubTitle = "SEND A",
-					DefaultIcon = "",
-					BackgroundColor = Util.GetColorStringRGB(Util.CellBackgroundColor),
-					SelectedBackgroundColor = Util.GetColorStringRGB(UIColor.FromRGB(244, 233, 207))
-				};
-				def.Keys[0] = (keyA);
-
-				action = osx ? VirtualKeyCodeOSX.KEY_B.ToString("D") : VirtualKeyCodeWIN.KEY_B.ToString("D");
-				action = "[" + action + "]";
-
-				FPKey keyB = new FPKey
-				{
-					Action = action,
-					MainTitle = "B",
-					SubTitle = "SEND B",
-					DefaultIcon = "",
-					BackgroundColor = Util.GetColorStringRGB(Util.CellBackgroundColor),
-					SelectedBackgroundColor = Util.GetColorStringRGB(UIColor.FromRGB(244, 233, 207))
-				};
-				def.Keys[1] = (keyB);
-
-				action = osx ? VirtualKeyCodeOSX.RETURN.ToString("D") : VirtualKeyCodeWIN.RETURN.ToString("D");
-				action = "[" + action + "]";
-
-				FPKey keyENTER = new FPKey
-				{
-					Action = action,
-					MainTitle = "ENT",
-					SubTitle = "ENTER",
-					DefaultIcon = "",
-					BackgroundColor = Util.GetColorStringRGB(Util.CellBackgroundColor),
-					SelectedBackgroundColor = Util.GetColorStringRGB(UIColor.FromRGB(244, 233, 207))
-				};
-				def.Keys[2] = (keyENTER);
-
-				action = osx ? VirtualKeyCodeOSX.KEY_1.ToString("D") + VirtualKeyCodeOSX.KEY_2.ToString("D") : VirtualKeyCodeWIN.KEY_1.ToString("D") + VirtualKeyCodeWIN.KEY_2.ToString("D");
-				action = "[" + action + "]";
-
-				FPKey keyE = new FPKey
-				{
-					Action = "action",
-					MainTitle = "12",
-					SubTitle = "MULTIPLE",
-					DefaultIcon = "",
-					BackgroundColor = Util.GetColorStringRGB(Util.CellBackgroundColor),
-					SelectedBackgroundColor = Util.GetColorStringRGB(UIColor.FromRGB(244, 233, 207))
-				};
-				def.Keys[3] = (keyE);
-
-				if (def.Keys.Count < MAX_CONFIG_KEYS)
-				{
-					for (int i = def.Keys.Count; i < MAX_CONFIG_KEYS; i++)
-						def.Keys.Add(new FPKey());
-				}
-
-				var x = SaveConfiguration(def);
-
-				return def;
+				await ExtractFile("Configurations/VisualStudio.zip");
+				var config = LoadConfiguration("VisualStudio");
+				return config;
 			}
 		}
 
