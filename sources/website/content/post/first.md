@@ -12,9 +12,11 @@ It's an utility for professionals to help them trigger commands, actions and sho
 <br>
 
 ### How do I use it?  
+This short video shows how to connect and use it: https://youtu.be/CDKcjW3gpZ4  
+
 On your Mac or Windows computer, download the helper clicking on the "Download Helper" button above and run it.  
 On your iPad, install [TouchBoard](https://itunes.apple.com/app/id1187810998?mt=8&at=1001lpzu) and follow the on screen instructions.  
-Remeber to activate discovery mode in the helper for the first connection.
+Remember to activate discovery mode in the helper for the first connection.
 <br>
 <br>
 
@@ -79,6 +81,8 @@ Please head over the [GitHub](https://github.com/xeo-it/touchboard) repository t
 
 ### What does "Use interceptor" checkbox do?  
 It's used for videogames on windows, please read the above answer.
+<br>
+<br>
 
 ### I don't like the ad and I am too cheap to pay 99c to remove it, why life is so hard?
 You can clone the git repository and install it on your iPad, that version doesn't have any ad.
