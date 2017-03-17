@@ -3,10 +3,16 @@
 <p align="center">
 <img src="/screenshots/Icon.png" width="280">  
 <br/>
+
 **Visual shortcuts ninja**  
-[![App Store](https://img.shields.io/badge/App%20Store-Download-blue.svg)](https://itunes.apple.com/app/id1187810998?mt=8&at=1001lpzu)  [![Helper](https://img.shields.io/badge/Helper-Download-lightgrey.svg)](http://www.timelabs.io/touchboard/download/TouchBoard-Helper.zip)  [![FAQ](https://img.shields.io/badge/FAQ-Read-blue.svg)](http://www.timelabs.io/touchboard)
-<br/>
-<p>
+
+<div align = "center">
+<br>
+<a href="https://itunes.apple.com/app/id1187810998?mt=8&at=1001lpzu" target="blank"><img src="https://img.shields.io/badge/App%20Store-Download-blue.svg" /></a>
+<a href="http://www.timelabs.io/touchboard/download/TouchBoard-Helper.zip" target="blank"><img src="https://img.shields.io/badge/Helper-Download-lightgrey.svg" /></a>
+<a href="http://www.timelabs.io/touchboard" target="blank"><img src="https://img.shields.io/badge/FAQ-Read-blue.svg" /></a>
+<br><br>
+</div>
 
 ### Overview  
 I built TouchBoard a couple of years ago but I was never able to finish it off completely; I decided to wrap it up quickly and make it open source since someone might find it useful.  
