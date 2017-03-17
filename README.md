@@ -3,8 +3,9 @@
 <p align="center">
 <img src="/screenshots/Icon.png" width="280">  
 <br/>
-
-**Visual shortcuts ninja**  
+Visual shortcuts ninja
+<br/>
+<p>
 
 <div align = "center">
 <br>
