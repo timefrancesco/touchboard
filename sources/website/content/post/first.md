@@ -12,7 +12,8 @@ It's an utility for professionals to help them trigger commands, actions and sho
 <br>
 
 ### How do I use it?  
-This short video shows how to connect and use it: https://youtu.be/CDKcjW3gpZ4  
+[Video Tutorial for MacOS](https://youtu.be/tHSVlu53U5A)  
+[Video Tutorial for Windows](https://youtu.be/DebcedpwQgw)  
 
 On your Mac or Windows computer, download the helper clicking on the "Download Helper" button above and run it.  
 On your iPad, install [TouchBoard](https://itunes.apple.com/app/id1187810998?mt=8&at=1001lpzu) and follow the on screen instructions.  
