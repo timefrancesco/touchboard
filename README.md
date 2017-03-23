@@ -21,6 +21,11 @@ I build it mainly to use it with videogames, since I was never remembering all t
 **Be aware:** the code it's not tidy nor following good standards, it was just a spare time project to learn and explore, it doesn't contain tests and it definitely contains some hacks.  
 I would recommend reading the [FAQ](http://www.timelabs.io/touchboard) to understand what it does and how it works.  
 
+### Video Previews
+[Pairing TouchBoard with Windows](https://youtu.be/DebcedpwQgw)  
+[Gaming in Windows](https://youtu.be/s1KOUj9SK_c)  
+[Pairing TouchBoard with MacOS](https://youtu.be/tHSVlu53U5A)
+
 ### Structure  
 TouchBoard is divided in different projects:  
 - TouchBoard.ios: the iOS client running on iPad  
@@ -43,9 +48,13 @@ This version of Interceptor is a modified version of the [original wrapper](http
 
 #### How to use Interceptor
 1) Install the [Interception](https://github.com/oblitum/Interception/releases/latest) drivers, I would recommend to [read this page](http://www.oblita.com/interception.html) to better understand how they works  
+1a) Open an administrator command prompt  
+1b) Browse to the folder where you unzipped the interception drivers  
+1b) Run `install-interception.exe /install`  
 2) Restart your computer  
 3) Extract and run the TouchBoard Helper, be sure to run the proper version for your operating system (x86 or x64)   
 4) Tick the checkbox "Use Interceptor"   
+5) Press any key on your real keyboard
 
 It should work but I cannot guarantee it 100%, it depends on your operating system and hardware. 
 
