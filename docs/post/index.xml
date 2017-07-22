@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Post-rsses on TouchBoard</title>
-    <link>https://xeo-it.github.io/touchboard/post/index.xml</link>
+    <link>https://timelabs.io/touchboard/post/index.xml</link>
     <description>Recent content in Post-rsses on TouchBoard</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://xeo-it.github.io/touchboard/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://timelabs.io/touchboard/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title> </title>
-      <link>https://xeo-it.github.io/touchboard/post/first/</link>
+      <link>https://timelabs.io/touchboard/post/first/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xeo-it.github.io/touchboard/post/first/</guid>
+      <guid>https://timelabs.io/touchboard/post/first/</guid>
       <description>
 
 &lt;h3 id=&#34;what-is-touchboard&#34;&gt;What is TouchBoard?&lt;/h3&gt;
@@ -24,18 +24,15 @@
 
 &lt;h3 id=&#34;how-do-i-use-it&#34;&gt;How do I use it?&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://youtu.be/tHSVlu53U5A&#34;&gt;Video Tutorial for MacOS&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;https://youtu.be/DebcedpwQgw&#34;&gt;Video Tutorial for Windows&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;On your Mac or Windows computer, download the helper clicking on the &amp;ldquo;Download Helper&amp;rdquo; button above and run it.&lt;br /&gt;
+&lt;p&gt;On your Mac, download the helper clicking on the &amp;ldquo;Download Helper&amp;rdquo; button above and run it.&lt;br /&gt;
 On your iPad, install &lt;a href=&#34;https://itunes.apple.com/app/id1187810998?mt=8&amp;amp;at=1001lpzu&#34;&gt;TouchBoard&lt;/a&gt; and follow the on screen instructions.&lt;br /&gt;
-Remember to activate discovery mode in the helper for the first connection.
+Remeber to activate discovery mode from the Mac helper for the first connection.
 &lt;br&gt;
 &lt;br&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;how-does-it-works&#34;&gt;How does it works?&lt;/h3&gt;
 
-&lt;p&gt;TouchBoard connects via a socket to the helper, when the helper receive commands  it executes them on your Mac or Windows PC.
+&lt;p&gt;TouchBoard connects via a socket to the helper, when the helper receive commands  it executes them on the Mac.
 &lt;br&gt;
 &lt;br&gt;&lt;/p&gt;
 
@@ -53,7 +50,7 @@ Remember to activate discovery mode in the helper for the first connection.
 
 &lt;h3 id=&#34;what-is-a-touchboard-configuration-exactly&#34;&gt;What is a TouchBoard configuration exactly?&lt;/h3&gt;
 
-&lt;p&gt;It&amp;rsquo;s just a list of quick commands that you can send to your host machine.&lt;br /&gt;
+&lt;p&gt;It&amp;rsquo;s just a list of quick commands that you can send to the Mac.&lt;br /&gt;
 Each TouchBoard configuration support up to 20 commands, it is possible to customize the look (text, colors and icons) and the command to send.
 &lt;br&gt;
 &lt;br&gt;&lt;/p&gt;
@@ -89,6 +86,13 @@ Then tap save and tap the &amp;ldquo;Edit&amp;rdquo; button once again to exit e
 &lt;br&gt;
 &lt;br&gt;&lt;/p&gt;
 
+&lt;h3 id=&#34;what-if-i-don-t-have-a-mac&#34;&gt;What if I don&amp;rsquo;t have a Mac?&lt;/h3&gt;
+
+&lt;p&gt;A Windows helper it&amp;rsquo;s also been developed but not yet available, if you are a developer you can check out the source code.&lt;br /&gt;
+The iPad app also needs a couple of tweaks before being able to recognize a windows machine.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
 &lt;h3 id=&#34;can-i-use-it-on-the-iphone&#34;&gt;Can I use it on the iPhone?&lt;/h3&gt;
 
 &lt;p&gt;Not at the moment.
@@ -97,14 +101,7 @@ Then tap save and tap the &amp;ldquo;Edit&amp;rdquo; button once again to exit e
 
 &lt;h3 id=&#34;can-i-use-it-for-videogames&#34;&gt;Can I use it for videogames?&lt;/h3&gt;
 
-&lt;p&gt;Yes, but depends on the game, on the Mac it&amp;rsquo;s not supported, on windows you have to install a particular driver called Interception.&lt;br /&gt;
-Please head over the &lt;a href=&#34;https://github.com/xeo-it/touchboard&#34;&gt;GitHub&lt;/a&gt; repository to read the instructions if you want to do this.
-&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;what-does-use-interceptor-checkbox-do&#34;&gt;What does &amp;ldquo;Use interceptor&amp;rdquo; checkbox do?&lt;/h3&gt;
-
-&lt;p&gt;It&amp;rsquo;s used for videogames on windows, please read the above answer.
+&lt;p&gt;Depends on the game, on the Mac it&amp;rsquo;s generally not supported, on windows you have to install a particular driver called Interceptor. At the moment it&amp;rsquo;s available in the source code repository and requires some programming knownledge to set everything up, hopefully in the future I will create an installer to simplify the process.
 &lt;br&gt;
 &lt;br&gt;&lt;/p&gt;
 
